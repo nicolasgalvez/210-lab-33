@@ -1,0 +1,52 @@
+{
+    "configurations": [
+        {
+            "name": "Build and debug main.cpp",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/main",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build",
+            "externalConsole": true,
+            "MIMode": "lldb",
+            "preLaunchTask": "Build Main",
+            "targetArchitecture": "arm64",
+            "logging": {
+                "moduleLoad": false,
+                "programOutput": true,
+                "engineLogging": false
+            },
+            "environment": [
+                {
+                    "name": "LC_ALL",
+                    "value": "en_US.UTF-8"
+                },
+                {
+                    "name": "LANG",
+                    "value": "en_US.UTF-8"
+                }
+            ],
+            "showDisplayString": false,
+        },
+        {
+            "name": "Debug Tests",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/test_main",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/build",
+            "environment": [],
+            "externalConsole": true,
+            // "targetArchitecture": "x86_64",
+            "MIMode": "lldb",
+            "preLaunchTask": "Build Tests",
+            "logging": {
+                "engineLogging": false,
+                "moduleLoad": false
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
